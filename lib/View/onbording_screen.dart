@@ -46,7 +46,10 @@ class Onboarding extends StatelessWidget {
                           const SizedBox(
                             height: 10,
                           ),
-                          const PlanTextDescription(),
+                          PlanTextDescription(
+                            title:
+                                'Stream hit movies, fresh originals, and\n family favorites',
+                          ),
                           const SizedBox(
                             height: 30,
                           ),
@@ -151,19 +154,3 @@ class Onboarding extends StatelessWidget {
             )));
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

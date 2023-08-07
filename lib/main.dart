@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:max_app/View/creat_account.dart';
 import 'package:max_app/View/onbording_screen.dart';
 
 void main() {
@@ -10,8 +11,6 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Onboarding()
-    );
+    return const MaterialApp(home: Creataccount());
   }
 }
