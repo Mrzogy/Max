@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Background_color extends StatelessWidget {
-  const Background_color({
+class BackgroundColor extends StatelessWidget {
+  const BackgroundColor({
     super.key,
   });
 
@@ -11,7 +11,7 @@ class Background_color extends StatelessWidget {
       child: Container(
           width: 500,
           height: 930,
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             shape: BoxShape.rectangle,
             gradient: LinearGradient(
               begin: Alignment.topRight,

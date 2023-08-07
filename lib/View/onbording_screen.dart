@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:max_app/View/screen.dart';
-import 'package:max_app/compunent/background_color.dart';
 
 class Onboarding extends StatelessWidget {
   const Onboarding({super.key});
@@ -10,7 +9,7 @@ class Onboarding extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           elevation: 0,
-          backgroundColor: Color(0xff131b4f),
+          backgroundColor: const Color(0xff131b4f),
         ),
         // backgroundColor: Colors.blue,
         body: SafeArea(
@@ -22,7 +21,7 @@ class Onboarding extends StatelessWidget {
                   child: Container(
                     width: 500,
                     height: 930,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.rectangle,
                       gradient: LinearGradient(
                         begin: Alignment.topRight,
@@ -36,22 +35,22 @@ class Onboarding extends StatelessWidget {
                     child: SingleChildScrollView(
                       child: Column(
                         children: [
-                          Plantext(),
-                          SizedBox(
+                          const Plantext(),
+                          const SizedBox(
                             height: 10,
                           ),
-                          PlanTextDescription(),
-                          SizedBox(
+                          const PlanTextDescription(),
+                          const SizedBox(
                             height: 30,
                           ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 155),
+                          const Padding(
+                            padding: EdgeInsets.only(left: 155),
                             child: Saveup(),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
-                          Row(
+                          const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
@@ -65,26 +64,26 @@ class Onboarding extends StatelessWidget {
                               Mounthleysalary(),
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
-                          PayCard1(
+                          const PayCard1(
                             title: "With Ads",
                             salarytitle: "\$99.99",
                             pointinfo1: "Stream on 2 deviices at once",
                             pointinfo2: "Full HD video resolution",
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
-                          PayCard2(
+                          const PayCard2(
                             title: "Ad-free",
                             salarytitle: "\$149.99",
                             pointinfo1: "Stream on 2 deviices at once",
                             pointinfo2: "Full HD video resolution",
                             pointinfo3: "30 downlads to watch on the go",
                           ),
-                          PayCard3(
+                          const PayCard3(
                             title: "Ultimate Ad-Free",
                             salarytitle: "\$19.99",
                             pointinfo1: "Stream on 4 deviices at once",
@@ -92,27 +91,27 @@ class Onboarding extends StatelessWidget {
                             pointinfo3: "immersive audio with Dolby Atmos",
                             pointinfo4: "100 dawnloads to watch on the go",
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 30,
                           ),
-                          Text(
+                          const Text(
                             "Full HD, 4K Ultra HD, Dolby Atmos not available on \n all content within each plan.",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w100),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 10,
                           ),
-                          Text(
+                          const Text(
                             "Ultimate AD-Free dawnloads may include \nrestrictions in some content categories. Learn\n more at help.max.com",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.w100),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 20,
                           ),
                           ElevatedButton(
@@ -120,21 +119,21 @@ class Onboarding extends StatelessWidget {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => scren1()),
+                                    builder: (context) => const Scren1()),
                               );
                             },
-                            child: Text(
-                              "Continue",
-                              style: TextStyle(color: Colors.black),
-                            ),
                             style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.white,
                                 //fixedSize: Size(MediaQuery.of(context).size.width - 50, 50),
-                                minimumSize: Size(360, 50),
+                                minimumSize: const Size(360, 50),
                                 shadowColor: Colors.black,
                                 elevation: 10,
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10))),
+                            child: const Text(
+                              "Continue",
+                              style: TextStyle(color: Colors.black),
+                            ),
                           )
                         ],
                       ),
@@ -163,7 +162,7 @@ class PayCard1 extends StatelessWidget {
     return Container(
       width: 400,
       height: 250,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
@@ -177,17 +176,17 @@ class PayCard1 extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Text(
               title,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 25,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Row(
@@ -195,15 +194,15 @@ class PayCard1 extends StatelessWidget {
               children: [
                 Text(
                   salarytitle,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 25,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 5,
                 ),
-                Text(
+                const Text(
                   "/year",
                   style: TextStyle(
                       fontSize: 15,
@@ -212,7 +211,7 @@ class PayCard1 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Padding(
@@ -221,7 +220,7 @@ class PayCard1 extends StatelessWidget {
                 title: pointinfo1,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -248,17 +247,18 @@ class Pointinfo extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
-        Icon(
+        const Icon(
           Icons.circle,
           color: Colors.white,
           size: 12,
         ),
-        SizedBox(
+        const SizedBox(
           width: 10,
         ),
         Text(
           title,
-          style: TextStyle(color: Colors.white, fontWeight: FontWeight.w100),
+          style:
+              const TextStyle(color: Colors.white, fontWeight: FontWeight.w100),
         ),
       ],
     );
@@ -278,7 +278,7 @@ class Mounthleysalary extends StatelessWidget {
       decoration: BoxDecoration(
           border: Border.all(color: Colors.white),
           borderRadius: BorderRadius.circular(20)),
-      child: Align(
+      child: const Align(
         alignment: Alignment.center,
         child: Text(
           "Yearly",
@@ -299,11 +299,11 @@ class Saveup extends StatelessWidget {
     return Container(
       width: 100,
       height: 30,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         color: Color(0xff3651ea),
       ),
-      child: Padding(
-        padding: const EdgeInsets.only(top: 5),
+      child: const Padding(
+        padding: EdgeInsets.only(top: 5),
         child: Text(
           "Save up to 20%",
           textAlign: TextAlign.center,
@@ -322,7 +322,7 @@ class PlanTextDescription extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
+    return const Text(
       'Stream hit movies, fresh originals, and\n family favorites',
       maxLines: 2,
       textAlign: TextAlign.center,
@@ -339,7 +339,7 @@ class Plantext extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Align(
+    return const Align(
       alignment: Alignment.topCenter,
       child: Text(
         'Choose Your Plan',
@@ -371,7 +371,7 @@ class PayCard2 extends StatelessWidget {
     return Container(
       width: 400,
       height: 250,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
@@ -385,17 +385,17 @@ class PayCard2 extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Text(
               title,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 25,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Row(
@@ -403,15 +403,15 @@ class PayCard2 extends StatelessWidget {
               children: [
                 Text(
                   salarytitle,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 25,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 5,
                 ),
-                Text(
+                const Text(
                   "/year",
                   style: TextStyle(
                       fontSize: 15,
@@ -420,7 +420,7 @@ class PayCard2 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Padding(
@@ -429,7 +429,7 @@ class PayCard2 extends StatelessWidget {
                 title: pointinfo1,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -438,7 +438,7 @@ class PayCard2 extends StatelessWidget {
                 title: pointinfo2,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Padding(
@@ -475,7 +475,7 @@ class PayCard3 extends StatelessWidget {
     return Container(
       width: 400,
       height: 250,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topRight,
           end: Alignment.bottomLeft,
@@ -489,17 +489,17 @@ class PayCard3 extends StatelessWidget {
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Text(
               title,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 25,
                   color: Colors.white,
                   fontWeight: FontWeight.bold),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25,
             ),
             Row(
@@ -507,15 +507,15 @@ class PayCard3 extends StatelessWidget {
               children: [
                 Text(
                   salarytitle,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 25,
                       color: Colors.white,
                       fontWeight: FontWeight.bold),
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 5,
                 ),
-                Text(
+                const Text(
                   "/year",
                   style: TextStyle(
                       fontSize: 15,
@@ -524,7 +524,7 @@ class PayCard3 extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Padding(
@@ -533,7 +533,7 @@ class PayCard3 extends StatelessWidget {
                 title: pointinfo1,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Padding(
@@ -542,7 +542,7 @@ class PayCard3 extends StatelessWidget {
                 title: pointinfo2,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Padding(
@@ -551,7 +551,7 @@ class PayCard3 extends StatelessWidget {
                 title: pointinfo3,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Padding(
