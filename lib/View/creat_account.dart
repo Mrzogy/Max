@@ -85,9 +85,13 @@ class Creataccount extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-                      Textfieldtext(title: "First Name *", padding: 270),
+                      Textfieldtext(title: "Last Name *", padding: 270),
                       Textfieldmax(title: "title"),
-                      
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                          "By selicting Creat Account, you agree to our Terms of \n use and acknowedge you have read our Privacy \n Policy. you also agree to receive ads and offers from Max and our Affiliates. To opt out or learn more about \n your rights and choices, see the Privacy Policy")
                     ],
                   ),
                 ),
